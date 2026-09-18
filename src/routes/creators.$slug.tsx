@@ -56,7 +56,7 @@ function CreatorProfile() {
         <div className="flex min-h-svh flex-col justify-between px-5 pb-10 pt-16 md:px-10 lg:px-14 lg:pb-14 lg:pt-32">
           <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .9, ease: [.16, 1, .3, 1] }}>
             <p className="font-mono text-[10px] uppercase text-primary">{creator.category}</p>
-            <h1 className="mt-5 break-words font-display text-[17vw] leading-[.78] tracking-normal lg:text-[7vw]">{creator.handle}</h1>
+            <h1 className="mt-5 max-w-full break-words [overflow-wrap:anywhere] font-display text-[14vw] leading-[.78] tracking-normal sm:text-[12vw] lg:text-[7vw]">{creator.handle}</h1>
             <div className="mt-8 flex items-end justify-between border-t border-foreground/15 pt-5"><div><p className="font-medium">{creator.full_name}</p><p className="text-sm text-muted-foreground">{creator.role}</p></div><span className="font-mono text-[9px] uppercase text-muted-foreground">Managed talent</span></div>
             <p className="mt-16 max-w-xl text-2xl font-light leading-snug md:text-3xl">{creator.bio}</p>
           </motion.div>
